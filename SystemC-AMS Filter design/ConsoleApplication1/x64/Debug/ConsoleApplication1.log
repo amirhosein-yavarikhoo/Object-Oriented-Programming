@@ -1,0 +1,71 @@
+﻿  TB.cpp
+  Unknown compiler version - please run the configure tests and report the results
+C:\systemc-2.3.1a\src\sysc\kernel\sc_attribute.h(112): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_export.h(227): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\kernel\sc_simcontext.h(558,41): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\kernel\sc_event.h(550,27): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(201): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_prim_channel.h(241): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(607,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(604,1): message : while compiling class template member function 'void sc_core::sc_port_b<IF>::make_sensitive(sc_core::sc_method_handle,sc_core::sc_event_finder *) const'
+          with
+          [
+              IF=sc_core::sc_signal_in_if<bool>
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(377): message : see reference to class template instantiation 'sc_core::sc_port_b<IF>' being compiled
+          with
+          [
+              IF=sc_core::sc_signal_in_if<bool>
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_signal_ports.h(393): message : see reference to class template instantiation 'sc_core::sc_port<sc_core::sc_signal_in_if<bool>,1,sc_core::SC_ONE_OR_MORE_BOUND>' being compiled
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(586,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(583,1): message : while compiling class template member function 'void sc_core::sc_port_b<IF>::make_sensitive(sc_core::sc_thread_handle,sc_core::sc_event_finder *) const'
+          with
+          [
+              IF=sc_core::sc_signal_in_if<bool>
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(547,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(541,1): message : while compiling class template member function 'void sc_core::sc_port_b<IF>::add_interface(sc_core::sc_interface *)'
+          with
+          [
+              IF=sc_core::sc_signal_in_if<bool>
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(576,1): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_port.h(575,1): message : while compiling class template member function 'int sc_core::sc_port_b<IF>::interface_count(void)'
+          with
+          [
+              IF=sc_core::sc_signal_in_if<bool>
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_signal_ports.h(1205,1): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\systemc-2.3.1a\src\sysc\communication\sc_signal_ports.h(1203,1): message : while compiling class template member function 'void sc_core::sc_inout<T>::remove_traces(void) const'
+          with
+          [
+              T=double
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_signal_ports.h(1128,18): message : see reference to function template instantiation 'void sc_core::sc_inout<T>::remove_traces(void) const' being compiled
+          with
+          [
+              T=double
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_signal_ports.h(1125,1): message : while compiling class template member function 'sc_core::sc_inout<T>::~sc_inout(void)'
+          with
+          [
+              T=double
+          ]
+C:\systemc-2.3.1a\src\sysc\communication\sc_signal_ports.h(1753,2): message : see reference to function template instantiation 'sc_core::sc_inout<T>::~sc_inout(void)' being compiled
+          with
+          [
+              T=double
+          ]
+TB.obj : error LNK2019: unresolved external symbol "public: __cdecl sc_core::sc_time::sc_time(double,enum sc_core::sc_time_unit,class sc_core::sc_simcontext *)" (??0sc_time@sc_core@@QEAA@NW4sc_time_unit@1@PEAVsc_simcontext@1@@Z) referenced in function "protected: void __cdecl sc_core::sc_module::wait(double,enum sc_core::sc_time_unit)" (?wait@sc_module@sc_core@@IEAAXNW4sc_time_unit@2@@Z)
+TB.obj : error LNK2019: unresolved external symbol "public: __cdecl sc_core::sc_simcontext::sc_simcontext(void)" (??0sc_simcontext@sc_core@@QEAA@XZ) referenced in function "class sc_core::sc_simcontext * __cdecl sc_core::sc_get_curr_simcontext(void)" (?sc_get_curr_simcontext@sc_core@@YAPEAVsc_simcontext@1@XZ)
+TB.obj : error LNK2019: unresolved external symbol "void __cdecl sc_core::wait(class sc_core::sc_time const &,class sc_core::sc_simcontext *)" (?wait@sc_core@@YAXAEBVsc_time@1@PEAVsc_simcontext@1@@Z) referenced in function "protected: void __cdecl sc_core::sc_module::wait(double,enum sc_core::sc_time_unit)" (?wait@sc_module@sc_core@@IEAAXNW4sc_time_unit@2@@Z)
+TB.obj : error LNK2019: unresolved external symbol "public: __cdecl sc_core::sc_api_version_2_3_1<&int const sc_core::SC_DISABLE_VIRTUAL_BIND_UNDEFINED_>::sc_api_version_2_3_1<&int const sc_core::SC_DISABLE_VIRTUAL_BIND_UNDEFINED_>(enum sc_core::sc_writer_policy)" (??0?$sc_api_version_2_3_1@$1?SC_DISABLE_VIRTUAL_BIND_UNDEFINED_@sc_core@@3HB@sc_core@@QEAA@W4sc_writer_policy@1@@Z) referenced in function "void __cdecl sc_core::`dynamic initializer for 'api_version_check''(void)" (??__Eapi_version_check@sc_core@@YAXXZ)
+TB.obj : error LNK2019: unresolved external symbol "protected: void __cdecl sc_core::sc_port_base::report_error(char const *,char const *)const " (?report_error@sc_port_base@sc_core@@IEBAXPEBD0@Z) referenced in function "public: class sc_core::sc_signal_inout_if<double> * __cdecl sc_core::sc_port_b<class sc_core::sc_signal_inout_if<double> >::operator->(void)" (??C?$sc_port_b@V?$sc_signal_inout_if@N@sc_core@@@sc_core@@QEAAPEAV?$sc_signal_inout_if@N@1@XZ)
+TB.obj : error LNK2001: unresolved external symbol "char const * const sc_core::SC_ID_GET_IF_" (?SC_ID_GET_IF_@sc_core@@3QBDB)
+TB.obj : error LNK2001: unresolved external symbol "class sc_core::sc_simcontext * sc_core::sc_curr_simcontext" (?sc_curr_simcontext@sc_core@@3PEAVsc_simcontext@1@EA)
+TB.obj : error LNK2001: unresolved external symbol "class sc_core::sc_simcontext * sc_core::sc_default_global_context" (?sc_default_global_context@sc_core@@3PEAVsc_simcontext@1@EA)
+LIBCMTD.lib(exe_main.obj) : error LNK2019: unresolved external symbol main referenced in function "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\systemc-2.3.1a\msvc80\SystemC\Debug\SystemC.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\systemc-ams-2.3\msvc12\Debug\systemc_ams.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\nikim\source\repos\HW6\x64\Debug\ConsoleApplication1.exe : fatal error LNK1120: 9 unresolved externals
